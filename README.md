@@ -53,7 +53,7 @@ GET /api/trips?keyword=ภูเขา
 Response Status 200:
 
 {
-    "trips": [
+    "data": [
         {
             "title": "เที่ยวสิ้นปี บ้านอีต่องเหมืองปิล็อก ชมหมอก กินหมูกระทะ ล่าทางช้างเผือก",
             "eid": "4",
@@ -133,27 +133,30 @@ npm start
 GET /trips
 
 Response Status 200:
-[
-    {
-        "title": "คู่มือเที่ยวเกาะช้าง กิน เที่ยว พักที่ไหนดี? อ่านจบครบที่เดียว!",
-        "eid": "1",
-        "url": "https://www.wongnai.com/trips/travel-koh-chang",
-        "description": "เริ่มจากเพื่อนอยากไปเขาคิชฌกูฏ หลังจากดูรายการทีวี จึงทำให้เกิดทริปนี้ขึ้นแบบเร่งด่วน โดยเดินทางด้วยรถ บขส. ไปยังจันทบุรี และการเดินทางหลักในการเที่ยวคือมอเตอร์ไซค์เช่า",
-        "photos": [
-            "https://img.wongnai.com/p/1920x0/2019/07/02/ffef3d6d900146e9b17dbd726fd8bab6.jpg",
-            "https://img.wongnai.com/p/1600x0/2019/07/02/6a2733ab91164ac8943b77deb14fdbde.jpg",
-            "https://img.wongnai.com/p/1600x0/2019/07/02/941dbb607f0742bbadd63bbbd993e187.jpg",
-            "https://img.wongnai.com/p/1600x0/2019/07/02/bd1d256256c14c208d0843a345f75741.jpg"
-        ],
-        "tags": [
-            "เกาะ",
-            "ทะเล",
-            "จุดชมวิว",
-            "ธรรมชาติ",
-            "ตราด"
-        ]
-    }
-]
+
+{
+    "data":[
+        {
+            "title": "คู่มือเที่ยวเกาะช้าง กิน เที่ยว พักที่ไหนดี? อ่านจบครบที่เดียว!",
+            "eid": "1",
+            "url": "https://www.wongnai.com/trips/travel-koh-chang",
+            "description": "เริ่มจากเพื่อนอยากไปเขาคิชฌกูฏ หลังจากดูรายการทีวี จึงทำให้เกิดทริปนี้ขึ้นแบบเร่งด่วน โดยเดินทางด้วยรถ บขส. ไปยังจันทบุรี และการเดินทางหลักในการเที่ยวคือมอเตอร์ไซค์เช่า",
+            "photos": [
+                "https://img.wongnai.com/p/1920x0/2019/07/02/ffef3d6d900146e9b17dbd726fd8bab6.jpg",
+                "https://img.wongnai.com/p/1600x0/2019/07/02/6a2733ab91164ac8943b77deb14fdbde.jpg",
+                "https://img.wongnai.com/p/1600x0/2019/07/02/941dbb607f0742bbadd63bbbd993e187.jpg",
+                "https://img.wongnai.com/p/1600x0/2019/07/02/bd1d256256c14c208d0843a345f75741.jpg"
+            ],
+            "tags": [
+                "เกาะ",
+                "ทะเล",
+                "จุดชมวิว",
+                "ธรรมชาติ",
+                "ตราด"
+            ]
+        }
+    ]
+}
 ```
 
 ### Task 2: React Web Application
